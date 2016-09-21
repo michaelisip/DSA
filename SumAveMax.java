@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package TotalMax;
+package SumAveMax;
 
 /**
  *
@@ -13,7 +13,7 @@ package TotalMax;
 import java.util.Scanner;
 import java.util.Random;
 
-public class TotalMax {
+public class SumAveMax {
 
     /**
      * @param args the command line arguments
@@ -23,7 +23,7 @@ public class TotalMax {
     int sum = 0;
     int max = 0;
     
-    public void TotalMax(int size){
+    public void SumAveMax(int size){
         array = new int[size];
     }
     
@@ -66,12 +66,12 @@ public class TotalMax {
     public static void main(String[] args) {
         // TODO code application logic here
         Scanner input = new Scanner(System.in);
-        TotalMax obj = new TotalMax();
+        SumAveMax obj = new SumAveMax();
         
         System.out.print("Enter array size: ");
         int size = input.nextInt();
         
-        obj.TotalMax(size);
+        obj.SumAveMax(size);
         obj.Random();
         obj.Show();
         obj.GetSum();
