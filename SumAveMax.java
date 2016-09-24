@@ -1,8 +1,14 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+/** 
+* - Accepts keyboard input to set array size.
+* - Generate random numbers accordingly.
+* - Get the sum, average, and maximum value
+*
+* @author  [Michael John Isip]
+* @link    [https://github.com/mj-isip23]
+* @version [version number]
+* @since   [9-26-2016]
+*/
+
 package SumAveMax;
 
 /**
