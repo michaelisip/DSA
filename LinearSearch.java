@@ -1,8 +1,12 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+/**
+* LINEAR SEARCH checks each item in a collection from start to end until a match is found. 
+*
+* @author  [Michael John Isip]
+* @link    [https://github.com/mj-isip23]
+* @version [version number]
+* @since   [9-26-2016]
+*/
+
 package LinearSearch;
 
 /**
