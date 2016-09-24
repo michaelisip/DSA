@@ -1,13 +1,13 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
 /**
- *
- * @author MJ
- */
+* BINARY SEARCH is a Divide and Conquer algorithm that compares the item with the middle element of a sorted (ascending) array. 
+* Each step, the size of array is reduced to half until one single element remain and a match is found.
+*
+* @author  [Michael John Isip]
+* @link    [https://github.com/mj-isip23]
+* @version [version number]
+* @since   [9-26-2016]
+*/
+
 public class ArrayQueue_Isip {
 
     private String[] arrayQueue;
