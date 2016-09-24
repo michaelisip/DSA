@@ -1,3 +1,12 @@
+/*
+* FindMinMax - Find minimum and maximum numbers in an array
+*
+* @author  [Michael John Isip]
+* @link    [https://github.com/mj-isip23]
+* @version [version number]
+* @since   [9-26-2016]
+*/
+
 package FindMinMax;
 
 public class FindMinMax {
