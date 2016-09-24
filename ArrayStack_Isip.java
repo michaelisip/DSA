@@ -1,7 +1,6 @@
 /**
-* BINARY SEARCH is a Divide and Conquer algorithm that compares the item with the middle element of a sorted (ascending) array. 
-* Each step, the size of array is reduced to half until one single element remain and a match is found.
-*
+* A STACK is an ADT (abstract data type) in LIFO order (last in, first out).
+* 
 * @author  [Michael John Isip]
 * @link    [https://github.com/mj-isip23]
 * @version [version number]
