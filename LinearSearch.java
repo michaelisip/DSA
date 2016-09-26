@@ -19,10 +19,6 @@ import java.util.Random;
 
 
 public class LinearSearch {
-
-    /**
-     * @param args the command line arguments
-     */
     
     int array[];
     
@@ -39,7 +35,11 @@ public class LinearSearch {
     
     public void Show(){
         for(int i=0; i<array.length; i++){
-            System.out.print(array[i] + "\t");
+            if((i%15) == 0){
+                System.out.println();
+                System.out.print(array[i] + "\t");
+            } else 
+                System.out.print(array[i] + "\t");
         }
         System.out.println();
     }
@@ -47,11 +47,11 @@ public class LinearSearch {
     public void Search(int search, int size){
         for(int i=0; i<array.length; i++){
             if(array[i] == search){
-                System.out.println("Element found on index " + i);
+                System.out.println("Element found on index [" + i + "].");
                 break;
-            }
+            } if(i==array.length-1)
+                System.out.println("Element not found.");
         }
-        System.out.println("Element not found.");
     }
     
     public static void main(String[]args){
@@ -60,13 +60,16 @@ public class LinearSearch {
         
         System.out.print("Enter array size: ");
         int size = input.nextInt();
-        
-        System.out.print("Element to be searched: ");
-        int search = input.nextInt();
-        
+
+        //Show random numbers
         obj.LinearSearch(size);
         obj.Random(size);
         obj.Show();
+        
+        System.out.println();
+        System.out.print("Element to be searched: ");
+        int search = input.nextInt();
+        
         obj.Search(search, size);
     }
 
