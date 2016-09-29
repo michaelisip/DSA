@@ -3,60 +3,62 @@
 * 
 * @author  [Michael John Isip]
 * @link    [https://github.com/mj-isip23]
-* @version [version number]
+* @version [1.1]
 * @since   [9-26-2016]
 */
 
-public class ArrayStack_Isip {
+public class ArrayStack {
     
   private String[] arrayStack;
   private int arraySize;
   private int top=0;
     
     
-  public ArrayStack_Isip(int size) {
+  public ArrayStack(int size) {
       arraySize = size;
       arrayStack = new String[arraySize];
   }
   public static void main(String[] args) {
-      ArrayStack_Isip cons = new ArrayStack_Isip(10);
+      ArrayStack obj = new ArrayStack(10);
       
-      System.out.println("STACK SIZE = " + cons.arraySize);
+      System.out.println("STACK SIZE = " + obj.arraySize);
       System.out.println();
 
       //Show while stack is Empty
-      cons.Show();
+      obj.Show();
       
       //Push an element
-      cons.Push("mj");
+      obj.Push("mj");
       
       //Peek top element
-      cons.Peek();
+      obj.Peek();
       
       //Pop an element
-      cons.Pop();
+      obj.Pop();
       
-      cons.Show();
+      obj.Show();
       
       //Peek on Empty stack
-      cons.Peek();
+      obj.Peek();
       
       //Pop on Empty stack
-      cons.Pop();
+      obj.Pop();
       
-      cons.Push("one");
-      cons.Push("two");
-      cons.Push("three");
-      cons.Push("four");
-      cons.Push("five");
-      cons.Push("six");
-      cons.Push("seven");
-      cons.Push("eight");
-      cons.Push("nine");
-      cons.Push("ten");
+      obj.Push("one");
+      obj.Push("two");
+      obj.Push("three");
+      obj.Push("four");
+      obj.Push("five");
+      obj.Push("six");
+      obj.Push("seven");
+      obj.Push("eight");
+      obj.Push("nine");
+      obj.Push("ten");
       
       //Push on Full stack
-      cons.Push("eleven");
+      obj.Push("eleven");
+      
+      obj.Show();
   }
   
   public void Show(){
@@ -68,7 +70,7 @@ public class ArrayStack_Isip {
   
   public void Peek(){
       if(IsEmpty()){
-          System.out.println("Stack is EMPTY!");
+          System.out.println("Peek is null. Stack is EMPTY!");
           System.out.println();
       } else {
           System.out.println("TOP: Stack [" + (top-1) + "] = " + arrayStack[top-1]);          
